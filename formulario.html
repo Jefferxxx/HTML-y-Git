@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <h1>bienvenido al formulario</h1>
+        <p>si desea volver al inicio de click en el siguiente enlace</p>
+        <li><a href=index.html>inicio</a></li>
+      </ul>
+    </nav>
+  </header>
+  <form action="recolector" method="post" enctype="multipart/form-data">
+    <div>
+      <label for="name">ingrese su nombre</label>
+      <input type="text" name="name" id="name" placeholder="Ej: su nombre" required>
+    </div>
+    <br>
+    <div>
+      <label for="edad">ingrese su edad:</label>
+      <input type="text" name="edad" id="edad" min="1" max="100" step="1" autofocus>
+    </div>
+    <br>
+    <div>
+      <label for="telefono">ingrese su telefono:</label>
+      <input type="tel" name="telefono" id="telefono" required autofocus autocomplete="off">
+    </div>
+    <br>
+    <div>
+      <label form="correo">ingrese su correo electronico</label>
+      <input type="email" name="correo" id="correo" placeholder="xxxxxx@gmail.com" required autofocus>
+    </div>
+    <br>
+    <div>
+      <label>selccione su sexo:</label>
+      <label for="hombre">
+        <input type="radio" name="sexo" id="hombre" checked>hombre
+      </label>
+      <br>
+      <div>
+        <label>selccione su sexo:</label>
+        <label for="mujer">
+          <input type="radio" name="sexo" id="mujer">mujer
+        </label>
+      </div>
+      <br>
+      <div>
+        <label for="deporte">ingrese su deporte favorito</label>
+        <input type="deporte" name="deporte" id="deporte">
+      </div>
+      <br>
+      <div>
+        <label for="ciudad">ingrese su ciudad favorita</label>
+        <input type="ciudad" name="ciudad" id="ciudad">
+      </div>
+      <br>
+      <div>
+        <label for="ciudad"></label>ingrese su ciudad:</label>
+        <select name="ciudad" id="ciudad">
+          <option value="1">giron</option>
+          <option value="2" selected>bucaramanga</option>
+          <option value="3">floridablanca</option>
+          <option value="4">piedecuesta</option>
+        </select>
+      </div>
+      <br>
+      <div>
+        <label for="archivo">ingrese su foto (opcional)</label>
+        <input type="file" multiple id="archivo" name="foto" accept="jpg, .png">
+      </div>
+      <br>
+      <div>
+        <label for="reset">¿deseas resetear el formulario?</label>
+        <input type="reset" value="reset" id="reset">
+      </div>
+      <br>
+      <div>
+        <button type="submit">enviar formulario</button>
+      </div>
+  </form>
+</body>
+
+</html>
