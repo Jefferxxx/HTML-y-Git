@@ -19,22 +19,25 @@
   <form action="recolector" method="post" enctype="multipart/form-data">
     <div>
       <label for="name">ingrese su nombre</label>
-      <input type="text" name="name" id="name" placeholder="Ej: su nombre" required>
+      <input type="text" name="name" id="name" placeholder="Ej: su nombre" required autocomplete="off"
+        pattern="[a-zA-Z\s]{3,60}">
     </div>
     <br>
     <div>
       <label for="edad">ingrese su edad:</label>
-      <input type="text" name="edad" id="edad" min="1" max="100" step="1" autofocus>
+      <input type="text" name="edad" id="edad" min="1" max="100" step="1" autofocus autocomplete="off"
+        pattern="^[0-9]+">
     </div>
     <br>
     <div>
       <label for="telefono">ingrese su telefono:</label>
-      <input type="tel" name="telefono" id="telefono" required autofocus autocomplete="off">
+      <input type="tel" name="telefono" id="telefono" required autofocus autocomplete="off" pattern="^[0-9]{10}">
     </div>
     <br>
     <div>
       <label form="correo">ingrese su correo electronico</label>
-      <input type="email" name="correo" id="correo" placeholder="xxxxxx@gmail.com" required autofocus>
+      <input type="email" name="correo" id="correo" placeholder="xxxxxx@gmail.com" required autofocus autocomplete="off"
+        pattern="^[a-zA-Z0-9\.-_+]+@[a-zA-Z\.]+\.[a-zA-Z0-9]+$">
     </div>
     <br>
     <div>
@@ -52,12 +55,12 @@
       <br>
       <div>
         <label for="deporte">ingrese su deporte favorito</label>
-        <input type="deporte" name="deporte" id="deporte">
+        <input type="text" name="deporte" id="deporte" autocomplete="off">
       </div>
       <br>
       <div>
         <label for="ciudad">ingrese su ciudad favorita</label>
-        <input type="ciudad" name="ciudad" id="ciudad">
+        <input type="text" name="ciudad" id="ciudad" autocomplete="off">
       </div>
       <br>
       <div>
